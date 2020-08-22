@@ -1,8 +1,94 @@
-@media only screen and (min-width: 800px) {
-    #navbar {
-        top: 0px;
-        left: 0px;
-        bottom: 0px;
-        position: fixed;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar {
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    background-color: lightgray;
+    text-align: center;
+}
+#navheader {
+    border: solid;
+}
+
+h1 {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+#Language_Doc {
+    margin-top: 4%;
+}
+
+h3 {
+    margin-left:  4%;
+    margin-bottom: 1.5%;
+}
+
+a.nav-link {
+    height: 20%;
+    width: auto;
+    border-style: solid;
+}
+
+#notnavbar {
+    
+    position: absolute;
+    height: 100%;
+    width: 77%;
+    background-color: whitesmoke;
+    right: 0px;
+}
+
+.main-section {
+    margin-bottom: 5%;
+}
+
+p {
+    margin-left: 6%;
+    margin-right: 2%;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+li {
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.codediv {
+    background-color: lightgrey;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 2%;
+}
+
+code {
+    text-indent: 1.5%;
+}
+
+@media only screen and (max-width: 800px) {
+    /* easy reading for mobile  */
+    p {
+        font-family: sans-serif;
     }
 }
